@@ -1,0 +1,14 @@
+version: '3.2'
+services:
+
+  notebook:
+    image: hammer/jupyter
+    container_name: notebook
+    command: "/usr/local/bin/start.sh jupyter lab --NotebookApp.token=''"
+    volumes:
+      - data:/home/jovyan/work
+
+
+
+volumes:
+  data:

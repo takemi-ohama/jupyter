@@ -37,7 +37,7 @@ RUN conda install --quiet --yes \
 
 USER $NB_USER
 
-RUN /opt/conda/bin/pipi3 install --upgrade pip3 oauthenticator
+RUN /opt/conda/bin/pip install --upgrade pip oauthenticator
 
 
 RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix

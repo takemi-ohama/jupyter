@@ -25,6 +25,7 @@ RUN update-locale LANGUAGE=ja_JP:ja LANG=ja_JP.UTF-8
 RUN conda install --quiet --yes \
     'conda-build' \
     'readline' \
+    'python-dotenv' \
     'mysql-connector-python' \
     'pymysql' \
     'psycopg2' \

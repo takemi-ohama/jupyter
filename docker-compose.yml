@@ -1,14 +1,14 @@
-version: '3.2'
+version: '3.3'
 services:
 
   notebook:
-    image: hammer/jupyter
-    container_name: notebook
+    image: hammer/jupyter:latest
     command: "/usr/local/bin/start.sh jupyter lab --NotebookApp.token=''"
     volumes:
-      - data:/home/jovyan/work
-
-
+      - work:/home/jovyan/work
+    ports:
+      - 18888:8888
 
 volumes:
-  data:
+  work:
+  

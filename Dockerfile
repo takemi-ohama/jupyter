@@ -30,6 +30,8 @@ RUN conda install --quiet --yes \
     'pymysql' \
     'psycopg2' \
     'sqlalchemy-redshift' \
+    'awscli' \
+    'boto3' \
     'gensim' \ 
     'pivottablejs' \
     'jupyterlab' \ 
@@ -37,7 +39,6 @@ RUN conda install --quiet --yes \
     'xgboost' \
     'tensorflow' \
     'imbalanced-learn' \
-    'flask' \
     && conda clean -tipsy
 
 USER $NB_USER
